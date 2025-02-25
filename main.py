@@ -1,3 +1,5 @@
+# This is the base code, I do have another version that will utilise Flask (open-source Python web framework), to create a easy to use user based execution.
+
 import os
 from time import sleep
 import win32com.client
@@ -6,9 +8,9 @@ import win32com.client
 user_input = input("Please enter the drawings directory.")
 project_root = r'%s' % user_input
 # Path to the LISP file
-lisp_file = input("Input Lisp File : ")
+lisp_file = input("Input Lisp File : ") # This can be changed to a dedicated lisp, so there is more security.
 # LISP command name
-lisp_command = "SETUPSITELAYERANDBINDXREF"
+lisp_command = "SETUPSITELAYERANDBINDXREF" # This can all be customised to use whatever lisp needs to be used. for this example i'm using my SITE BINDING SCRIPT & LAYER MAKING.
 # Tags to filter for in the file names
 tags = ["DWG300", "DWG350", "DWG380"]
 
